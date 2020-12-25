@@ -1,9 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-char before(char x){
-	//Write your function definition here
+char before(char x)
+{
+    string y= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    if( x == 'A')
+    {
+        return 'Z';
+    }
+    int i = 0;
+    while ( i < 26 )
+    {
+        
+        
+    
+    if( y[i]== x)
+    {
+        return y[i-1];
+    }
+      i++;
+      
+    }
+    return '0';
+  
+
+
+
+
 }
+
 
 int main(){
 	//Test Case
